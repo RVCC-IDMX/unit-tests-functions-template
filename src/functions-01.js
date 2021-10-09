@@ -7,57 +7,60 @@
  *
  */
 
-
-/* very-easy.js */
-
+/**
+ * accepts a string of a person's first and last name and
+ * returns a string with "lastname, firstname"
+ * @param {string} str - the string with first and last names
+ * @returns {string} - the string as last name, first name
+ * example: "John Smith" returns "Smith, John"
+ * example: 'Buzz Lightyear' returns 'Lightyear, Buzz'
+ */
 function nameShuffle(str) {
-  // Create a function that accepts a string
-  // of a person's first and last name and
-  // returns a string with "lastname, firstname"
-  // For example get 'Buzz Lightyear'
-  // and return 'Lightyear, Buzz'
+  // write your code here & return value
 }
 
+/**
+ * returns true if a pair of strings is a "strange pair",
+ * and false otherwise.
+ * @param {string} str1 - the first string to compare
+ * @param {string} str2 - the second string to compare
+ * @returns {boolean}
+ * example: 'ratio', 'orator' returns true
+ * example: 'cupid', 'dionysus' returns false
+ * example: 'yahtzee', 'easy' returns true
+ * example: '&', '&' returns true
+ */
 function isStrangePair(str1, str2) {
-  // Let's say a pair of strings form a "strange pair" if:
-  // 1st string's first letter = 2nd string's last letter.
-  // 1st string's last letter = 2nd string's first letter.
-  // Create a function that returns true if a pair of strings
-  // is a "strange pair", and false otherwise.
+  // write your code here & return value
 }
 
+/**
+ * Returns the number from a string with a % sign at the end
+ * @param {string} percents - string with an ending % character
+ * @returns {number} - the number of the percent
+ * example: '10%' returns 0.1
+ * example: '100%' returns 1
+ * example: '98.6%' returns 0.986
+ */
 function convertToDecimal(percents) {
-  // Create a function to convert an array of
-  // percents to their decimal equivalents.
-  // Required: use ES6 array method(s)
-  // Hint: use string.replace()
+  // write your code here & return value
 }
 
-function verifySubstrs(mainStr, head, body, tail) {
-  // Write a function that takes four string arguments.
-  // You will be comparing the first string to the three
-  // next strings. Verify if the first string starts with
-  // the second string, includes the third string in the middle,
-  // and ends with the fourth string.
-  // If the first string passes all checks, return 'complete'
-  // else return 'incomplete'
-  // the tests are not case sensitive
-  // there maybe overlap between strings and the test will pass
-  // this means you cannot just test if
-  // "theonering" == "the" + "one" "ring"
-}
-
+/**
+ * Returns true if two arrays sum up to the same number
+ * @param {array} a1 - first array of numbers to compare
+ * @param {array} a2 - second array of numbers to compare
+ * @returns {boolean}
+ * example: [1, 2, 3, 4], [4, 3, 2, 1] returns true
+ * example: [0, 0, 0, 0, 0], [1, 1, 1, 1] returns false
+ */
 function checkSameSum(a1, a2) {
-  // Write a function that returns true
-  // if two arrays sum up to a constant array
-  // required: use ES6 array method(s)
-  // https://www.tutorialspoint.com/es6/es6_arrays.htm
+  // write your code here & return value
 }
 
 module.exports = {
   nameShuffle,
   isStrangePair,
   convertToDecimal,
-  verifySubstrs,
   checkSameSum,
 };
