@@ -8,7 +8,7 @@
  */
 
 const store = {
-  name: 'Majestic This',
+  name: 'This Object Store',
   inventory: [
     { name: 'Bike', price: 100, quantity: 5 },
     { name: 'TV', price: 200, quantity: 8 },
@@ -28,14 +28,14 @@ const store = {
    * @returns {string} - the name of the store
    */
   getName() {
-    // code here & return
+    // write your code here & return value
   },
   /**
    * Returns the inventory of the store
    * @returns {array} - the inventory of the store
    */
   getInventory() {
-    // code here & return
+    // write your code here & return value
   },
   /**
    * Returns an arrays of most expensive items in inventory
@@ -43,22 +43,14 @@ const store = {
    * @return {array} items - the array of items that are filtered
    */
   getExpensiveItems(maxPrice) {
-    // code here & return
+    // write your code here & return value
   },
   /**
-   * Returns an array of items in store
+   * Returns an array of item names in store
    * @return {array} items - the array of items that are filtered
    */
   getStoreItems() {
-    // code here & return
-  },
-  /**
-   * Returns the price of the item
-   * @param {string} itemName - the name of the item
-   * @return {array} items - the array of items that are filtered
-   */
-  getPrice(itemName) {
-    // code here & return
+    // write your code here & return value
   },
   /**
    * Returns true if the item is in the store
@@ -67,10 +59,30 @@ const store = {
    * false otherwise
    */
   isItemInStore(itemName) {
-    // code here & return
+    // write your code here & return value
   },
   /**
+   * Returns the price of the item
+   * @param {string} itemName - the name of the item
+   * @return {number} price - the price of the item,
+   * -1 if the item is not in the store
+   */
+  getPrice(itemName) {
+    // write your code here & return value
+  },
+
+  /**
    * Returns the quantity of the item
+   * @param {string} itemName
+   * @return {number} quantity - the quantity of the item,
+   * -1 if the item is not in the store
+   */
+  getQuantity(itemName) {
+    // write your code here & return value
+  },
+
+  /**
+   * Adds the quantity of the item
    * @param {string} itemName - the name of the item
    * @param {number} price - the price of the item
    * @param {number} quantity - the quantity of the item
@@ -79,34 +91,27 @@ const store = {
    * If the item is not in the store, the item is added to the store
    */
   addItem(itemName, price, quantity) {
-    // code here & return
+    // write your code here & return value
   },
   /**
    * Removes a certain quantity of an item from the store
    * @param {string} itemName - name of the item to remove from store
    * @return {number} quantity - the quantity of the items to remove
-   * @return {number} removed - the quantity of the items removed, which may be less than quantity if not enough are not in the store
+   * @return {number} newQuantity - the quantity of the item
+   * after processing, or -1 if the item is not in the store
+   * or -1 if the quantity to remove is greater than the quantity of the item
    */
   removeItem(itemName, quantity) {
-    // code here & return
+    // write your code here & return value
   },
   /**
-   * Returns the total price of all he items in the store
+   * Returns the total of all the items in the store
    * @return {number} totalPrice - the total price of the items in the store
    * must use the reduce() array method
    */
   getTotalValue() {
-    // code here & return
+    // write your code here & return value
   },
 };
 
-module.exports = {
-  getName: store.getName,
-  getExpensiveItems: store.getExpensiveItems,
-  getPrice: store.getPrice,
-  getStoreItems: store.getStoreItems,
-  isItemInStore: store.isItemInStore,
-  addItem: store.addItem,
-  removeItem: store.removeItem,
-  getTotalValue: store.getTotalValue,
-};
+module.exports = store;
