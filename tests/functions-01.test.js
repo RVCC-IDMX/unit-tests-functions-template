@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 const {
   nameShuffle,
   isStrangePair,
@@ -22,10 +21,10 @@ test('isStrangePair', () => {
 });
 
 test('convertToDecimal', () => {
-  expect(convertToDecimal('33%')).toEqual(0.33);
-  expect(convertToDecimal('100%')).toEqual(1);
-  expect(convertToDecimal('0%')).toEqual(0);
-  expect(convertToDecimal('56.73%')).toEqual(0.5673);
+  expect(convertToDecimal('33%')).toBeCloseTo(0.33, 5);
+  expect(convertToDecimal('100%')).toBeCloseTo(1, 5);
+  expect(convertToDecimal('0%')).toBeCloseTo(0, 5);
+  expect(convertToDecimal('56.73%')).toBeCloseTo(0.5673, 5);
 });
 
 test('checkSameSum', () => {

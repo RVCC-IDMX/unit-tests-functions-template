@@ -36,13 +36,13 @@ function isStrangePair(str1, str2) {
 
 /**
  * Returns the number from a string with a % sign at the end
- * @param {string} percents - string with an ending % character
+ * @param {string} percent - string with an ending % character
  * @returns {number} - the number of the percent
  * example: '10%' returns 0.1
  * example: '100%' returns 1
  * example: '98.6%' returns 0.986
  */
-function convertToDecimal(percents) {
+function convertToDecimal(percent) {
   // write your code here & return value
 }
 
