@@ -52,30 +52,30 @@ test('isItemInStore', () => {
   expect(store.isItemInStore('Skateboard')).toBe(false);
 });
 
-test('getPrice', () => {
-  expect(store.getPrice('Bike')).toBe(100);
-  expect(store.getPrice('Skateboard')).toBe(-1);
+test('getItemPrice', () => {
+  expect(store.getItemPrice('Bike')).toBe(100);
+  expect(store.getItemPrice('Skateboard')).toBe(-1);
 });
 
-test('getQuantity', () => {
-  expect(store.getQuantity('Bike')).toBe(5);
-  expect(store.getQuantity('Skis')).toBe(-1);
+test('getItemQuantity', () => {
+  expect(store.getItemQuantity('Bike')).toBe(5);
+  expect(store.getItemQuantity('Skis')).toBe(-1);
 });
 
-test('addItem', () => {
-  expect(store.addItem('Bike', 100, 3)).toBe(8);
-  expect(store.addItem('Skateboard', 100, 1)).toBe(1);
-  expect(store.addItem('Skateboard', 100, 1)).toBe(2);
+test('addItemQuantity', () => {
+  expect(store.addItemQuantity('Bike', 100, 3)).toBe(8);
+  expect(store.addItemQuantity('Skateboard', 100, 1)).toBe(1);
+  expect(store.addItemQuantity('Skateboard', 100, 1)).toBe(2);
 });
 
-test('removeItem', () => {
-  expect(store.removeItem('Bike', 2)).toBe(6);
-  expect(store.removeItem('Skis', 2)).toBe(-1);
+test('removeItemQuantity', () => {
+  expect(store.removeItemQuantity('Bike', 2)).toBe(6);
+  expect(store.removeItemQuantity('Skis', 2)).toBe(-1);
 });
 
 test('getTotalValue', () => {
   const total = 31673;
   expect(store.getTotalValue()).toBe(total);
-  store.addItem('Bike', 100, 3);
+  store.addItemQuantity('Bike', 100, 3);
   expect(store.getTotalValue()).toBe(total + 100 * 3);
 });
