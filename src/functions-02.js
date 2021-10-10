@@ -7,22 +7,24 @@
  *
  */
 
+inventory = [
+  { name: 'Bike', price: 100, quantity: 5 },
+  { name: 'TV', price: 200, quantity: 8 },
+  { name: 'Album', price: 10, quantity: 150 },
+  { name: 'Book', price: 5, quantity: 72 },
+  { name: 'Phone', price: 105, quantity: 58 },
+  { name: 'Computer', price: 1000, quantity: 12 },
+  { name: 'Keyboard', price: 25, quantity: 67 },
+  { name: 'Mouse', price: 35, quantity: 93 },
+  { name: 'Speaker', price: 145, quantity: 8 },
+  { name: 'Monitor', price: 175, quantity: 13 },
+  { name: 'Printer', price: 165, quantity: 4 },
+  { name: 'Scanner', price: 149, quantity: 2 },
+];
+
 const store = {
   name: 'This Object Store',
-  inventory: [
-    { name: 'Bike', price: 100, quantity: 5 },
-    { name: 'TV', price: 200, quantity: 8 },
-    { name: 'Album', price: 10, quantity: 150 },
-    { name: 'Book', price: 5, quantity: 72 },
-    { name: 'Phone', price: 105, quantity: 58 },
-    { name: 'Computer', price: 1000, quantity: 12 },
-    { name: 'Keyboard', price: 25, quantity: 67 },
-    { name: 'Mouse', price: 35, quantity: 93 },
-    { name: 'Speaker', price: 145, quantity: 8 },
-    { name: 'Monitor', price: 175, quantity: 13 },
-    { name: 'Printer', price: 165, quantity: 4 },
-    { name: 'Scanner', price: 149, quantity: 2 },
-  ],
+
   /**
    * Returns the name of the store
    * @returns {string} - the name of the store
