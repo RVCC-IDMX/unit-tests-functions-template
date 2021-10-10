@@ -4,6 +4,7 @@ const {
   isStrangePair,
   convertToDecimal,
   checkSameSum,
+  saveLogin,
 } = require('../src/functions-01');
 
 test('nameShuffle', () => {
@@ -37,3 +38,10 @@ test('checkSameSum', () => {
   expect(checkSameSum([1, 2, -5, 4], [4, -3, 5])).toBe(false);
   expect(checkSameSum([-1, -2, -5, -4], [-12])).toBe(true);
 });
+
+test('saveLogin', () => {
+  let findLogin = saveLogin('Gizmo');
+  expect(findLogin()).toBe('Gizmo');
+  findLogin = saveLogin('StarPuppy');
+  expect(findLogin()).toBe('StarPuppy');
+})

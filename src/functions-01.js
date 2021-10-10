@@ -58,9 +58,21 @@ function checkSameSum(a1, a2) {
   // write your code here & return value
 }
 
+/**
+ * Saves the username for later use
+ * @param {string} name - a username
+ * @returns {function} - a function that returns the username
+ * example: saveUsername('John') returns a function that returns 'John'
+ * must use a closure to save the username
+ */
+function saveLogin(name) {
+  // write your code here
+}
+
 module.exports = {
   nameShuffle,
   isStrangePair,
   convertToDecimal,
   checkSameSum,
+  saveLogin
 };
