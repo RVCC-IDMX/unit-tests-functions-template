@@ -8,7 +8,7 @@
  */
 
 /**
- * accepts a string of a person's first and last name and
+ * accepts a string of a person's first and last names and
  * returns a string with "lastname, firstname"
  * @param {string} str - the string with first and last names
  * @returns {string} - the string as last name, first name
@@ -25,6 +25,9 @@ function nameShuffle(str) {
  * @param {string} str1 - the first string to compare
  * @param {string} str2 - the second string to compare
  * @returns {boolean}
+ * A strange pair is when the first letter of one string is
+ * the last letter of the other string
+ *
  * example: 'ratio', 'orator' returns true
  * example: 'cupid', 'dionysus' returns false
  * example: 'yahtzee', 'easy' returns true
@@ -53,6 +56,7 @@ function convertToDecimal(percent) {
  * @returns {boolean}
  * example: [1, 2, 3, 4], [4, 3, 2, 1] returns true
  * example: [0, 0, 0, 0, 0], [1, 1, 1, 1] returns false
+ * example: [1, 2, 3, 4], [4, 3, 2, 1, 5] returns false
  */
 function checkSameSum(a1, a2) {
   // write your code here & return value

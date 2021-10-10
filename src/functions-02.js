@@ -5,7 +5,42 @@
  * Path: src/functions-02.js
  *
  *
- */
+ ! This assignment is built on the video
+ ! https://youtu.be/R8rmfD9Y5-c by Kyle Simpson
+ ! from Web Dev Simplified
+*
+*/
+
+/*
+ ? The inventory array is outside the object. That makes its scope global
+ ? to the code in this file.
+
+ ? An object called store is then being created with along its methods.
+ ? At the end of the file, the object is being exported.
+
+ ? This makes the object public to whatever code imports it (using the require()
+ ? function in CommonJS).
+
+ ? The inventory could be a property of the object. Why isn't it?
+
+ ? Since the store object is being exported, any property of the store can be
+ ? changed by any other part of a program that imports the store object.
+
+ ? In an attempt to prevent the inventory from accidentally being corrupted,
+ ? the inventory array is outside store, making it private (not exported)
+
+ ? The object has methods that use the inventory array in different ways.
+ ? Your job is to write the methods.
+
+ ? The methods are called in the test file.
+ ? There are fewer examples in this file because you can look at the tests
+ ? to give you examples.
+
+ ? NOTE: To access a property from within an object, you can use the this keyword.
+ ? You'll have to use this to solve some of the problems.
+
+*/
+
 
 inventory = [
   { name: 'Bike', price: 100, quantity: 5 },
@@ -74,6 +109,7 @@ const store = {
    * @param {string} itemName - the name of the item
    * @return {number} price - the price of the item,
    * -1 if the item is not in the store
+   * must use isItemInStore() method in this object
    */
   getItemPrice(itemName) {
     // write your code here & return value
@@ -85,6 +121,7 @@ const store = {
    * @param {string} itemName
    * @return {number} quantity - the quantity of the item,
    * -1 if the item is not in the store
+   * must use isItemInStore() method in this object
    */
   getItemQuantity(itemName) {
     // write your code here & return value
@@ -99,6 +136,7 @@ const store = {
    * @return {number} quantity - the quantity of the item after processing
    * If the item is already in the store, the quantity is updated
    * If the item is not in the store, the item is added to the store
+   * must use isItemInStore() method in this object
    */
   addItemQuantity(itemName, price, quantity) {
     // write your code here & return value
@@ -111,6 +149,7 @@ const store = {
    * @return {number} newQuantity - the quantity of the item
    * after processing, or -1 if the item is not in the store
    * or -1 if the quantity to remove is greater than the quantity of the item
+   * must use isItemInStore() method in this object
    */
   removeItemQuantity(itemName, quantity) {
     // write your code here & return value
