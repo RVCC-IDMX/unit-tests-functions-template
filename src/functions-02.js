@@ -27,7 +27,7 @@
  ? changed by any other part of a program that imports the store object.
 
  ? In an attempt to prevent the inventory from accidentally being corrupted,
- ? the inventory array is outside store, making it private (not exported)
+ ? the inventory array is outside store, making it private (not exported).
 
  ? The object has methods that use the inventory array in different ways.
  ? Your job is to write the methods.
@@ -39,6 +39,9 @@
  ? NOTE: To access a property from within an object, you can use the this keyword.
  ? You'll have to use this to solve some of the problems.
 
+ ? [The attempt to prevent corruption is not fail-proof. To do better, we need to
+ ? do more sophisticated object handling, like freezing the store object. But that
+ ? is beyond the scope of this assignment.]
 */
 
 
