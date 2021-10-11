@@ -44,8 +44,8 @@
  ? is beyond the scope of this assignment.]
 */
 
-
-inventory = [
+// eslint-disable-next-line no-unused-vars
+const inventory = [
   { name: 'Bike', price: 100, quantity: 5 },
   { name: 'TV', price: 200, quantity: 8 },
   { name: 'Album', price: 10, quantity: 150 },
