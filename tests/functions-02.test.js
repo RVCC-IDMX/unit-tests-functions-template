@@ -71,6 +71,7 @@ test('addItemQuantity', () => {
 test('removeItemQuantity', () => {
   expect(store.removeItemQuantity('Bike', 2)).toBe(6);
   expect(store.removeItemQuantity('Skis', 2)).toBe(-1);
+  expect(store.removeItemQuantity('Scanner', 22)).toBe(-1);
 });
 
 test('getTotalValue', () => {
@@ -79,3 +80,4 @@ test('getTotalValue', () => {
   store.addItemQuantity('Bike', 100, 3);
   expect(store.getTotalValue()).toBe(total + 100 * 3);
 });
+
