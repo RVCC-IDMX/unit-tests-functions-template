@@ -69,9 +69,11 @@ test('addItemQuantity', () => {
 });
 
 test('removeItemQuantity', () => {
+  const scannerCount = store.getItemQuantity('Scanner');
   expect(store.removeItemQuantity('Bike', 2)).toBe(6);
   expect(store.removeItemQuantity('Skis', 2)).toBe(-1);
   expect(store.removeItemQuantity('Scanner', 22)).toBe(-1);
+  expect(store.getItemQuantity('Scanner')).toBe(scannerCount);
 });
 
 test('getTotalValue', () => {
