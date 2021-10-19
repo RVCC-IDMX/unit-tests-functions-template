@@ -148,7 +148,7 @@ const store = {
    * Removes a certain quantity of an item from the store
    * @method removeItemQuantity
    * @param {string} itemName - name of the item to remove from store
-   * @return {number} quantity - the quantity of the items to remove
+   * @param {number} quantity - the quantity of the items to remove
    * @return {number} newQuantity - the quantity of the item
    * after processing, or -1 if the item is not in the store
    * or -1 if the quantity to remove is greater than the quantity of the item
