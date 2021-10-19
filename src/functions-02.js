@@ -82,10 +82,10 @@ const store = {
   /**
    * Returns an arrays of most expensive items in inventory
    * @method getExpensiveItems
-   * @param {number} maxPrice - the maximum price of each item
+   * @param {number} minPrice - the price above which is considered expensive
    * @return {array} items - the array of items that are filtered
    */
-  getExpensiveItems(maxPrice) {
+  getExpensiveItems(minPrice) {
     // write your code here & return value
   },
   /**
