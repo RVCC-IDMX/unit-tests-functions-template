@@ -6,7 +6,7 @@
  *
  *
  ! This assignment is built on the video
- ! https://youtu.be/R8rmfD9Y5-c by Kyle Simpson
+ ! https://youtu.be/R8rmfD9Y5-c by Kyle Cook
  ! from Web Dev Simplified
 *
 */
